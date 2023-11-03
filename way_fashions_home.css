@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=Caveat:wght@500&family=Dancing+Script:wght@600&family=La+Belle+Aurore&family=Playfair+Display:ital,wght@1,500&family=Zen+Dots&display=swap');
+
+
+
+/*------------------------browser scrolling bar modification------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(24, 25, 20);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(147, 147, 228);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================Header/NavBar=====================================*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(165, 192, 252);
+}
+
+.navbar-brand {
+  letter-spacing: 0.4rem;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+small {
+  font-size: 0.9rem;
+  margin-left: -14px;
+}
+
+.nav-link1{
+  display: inline-block;
+  color: #000000;
+  margin-right: 3vw;
+  font-size: 30px;
+}
+
+.nav-link1:hover{
+  color:black;
+  cursor: pointer;
+}
+
+.nav-link {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Dancing Script", cursive;
+  display: inline-block;
+  position: relative;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*===============================Main-Front==========================================*/
+
+.main {
+  height: 91vh;
+  background: url("https://t3.ftcdn.net/jpg/04/13/61/70/240_F_413617084_JypfxlTss5tUCVVHsywOYsCnbLatPdNZ.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgb(165, 192, 252), rgb(130, 130, 248), rgb(95, 92, 255) );
+}
+
+.main h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Zen Dots", cursive;
+}
+
+.main p {
+  font-size: medium;
+  font-family: "Caveat", cursive;
+}
+
+.btn2 {
+  padding-left: 15px;
+  color: rgb(0, 0, 0);
+  background-color: whitesmoke;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 20px;
+  word-spacing: 2.16%;
+  text-align: center;
+  text-transform: lowercase;
+  font-family: "Caveat", cursive;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.btn2:hover {
+  background-color: rgb(155, 165, 248);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 15px 20px rgb(155, 165, 248);
+  transform: translateY(-7px);
+}
+
+
+
+/*=============================Shop More Link==============================================*/
+
+.main1{
+  max-height: 91vh;
+  background: linear-gradient(rgb(95, 92, 255), rgb(78, 75, 249), rgb(61, 58, 251));
+}
+
+.main1-header {
+  font-weight: bolder;
+  font-family: "Zen Dots", cursive;
+  font-size: 700;
+  letter-spacing: 0.4rem;
+}
+
+.zoom-n-rotate {
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  overflow: hidden;
+}
+
+.zoom-n-rotate img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.zoom-n-rotate:hover img {
+  transform: scale(1.1);
+}
+
+
+.first-btc {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background: black;
+  cursor: all 0.4s;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "La Belle Aurore", cursive;
+}
+
+.first-btc:hover {
+  background: rgb(123, 147, 245);
+  color: black;
+  transition: all 0.4s;
+}
+
+row1{
+  margin-top: 5vh;
+}
+
+
+
+/*===============================Testimonial CSS=============================================*/
+
+.main2-testi{
+  max-height: 92vh;
+  background: linear-gradient(rgb(61, 58, 251), rgb(40, 36, 251), rgb(30, 23, 248));
+}
+
+.test-text{
+  font-weight: bolder;
+  font-family: "Zen Dots", cursive;
+  font-size: 700;
+  letter-spacing: 0.4rem;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-inner {
+  background: transparent;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
+
+
+.carousel-item img {
+  max-height: 20vh;
+  margin-bottom: 35vh;
+  margin-top: 10vh;
+}
+
+
+.carousel-item h5{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+}
+
+.carousel-item p{
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+
+/*==================================Service Icon CSS====================================*/
+
+.sericon{
+  height: 51vh;
+  background: linear-gradient(rgb(30, 23, 248), rgb(12, 4, 250), rgb(8, 0, 250));
+}
+
+.ser-icon{
+  color: rgb(0, 0, 0);
+}
+
+.text-center h1{
+  font-weight: bolder;
+  color: white;
+}
+
+.text-center p{
+  font-weight: 500;
+  color: white;
+}
+
+
+/*======================================Footer============================================*/
+
+
+.footer{
+  background: linear-gradient(rgb(8, 0, 250), rgb(3, 0, 102), rgb(2, 0, 50));
+  font-family: 'Alexandria', sans-serif;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.footer h3{
+  color: white;
+  padding-top: 2vh;
+}
+
+.footer a:hover{
+  color: rgb(178, 178, 178);
+  padding-left: 5px;
+ 
+}
+
+.foot-cat{
+  padding-top: 0.80vh;
+}
+
+.join{
+  height: 50px;
+  width: 70%;
+  color: white;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+}
+
+.btnj{
+  height: 50px;
+  width: 30%;
+  border: none;
+  outline: none;
+  background: rgb(101, 101, 101);
+  color:black;
+  font-size: bolder;
+  border-radius: 10px;
+  margin-left: 1vw;
+}
+
+.btnj:hover{
+  color: rgb(13, 31, 71);
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.50s ease-in-out;
+}
+
+.circle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.circle:hover{
+  background: rgb(129, 129, 129);
+  color: rgb(255, 255, 255);
+  transition: all 0.80s ease-in-out;
+}
+
+.circle i{
+  color: rgb(0, 0, 0);
+}

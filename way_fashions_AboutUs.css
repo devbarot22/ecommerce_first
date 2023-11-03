@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=Caveat:wght@500&family=Dancing+Script:wght@600&family=La+Belle+Aurore&family=Playfair+Display:ital,wght@1,500&family=Zen+Dots&display=swap');
+
+
+
+/*------------------------browser scrolling bar modification------------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(170, 187, 98);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(225, 228, 147);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============================Header/NavBar=====================================*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(230, 246, 184);
+  position: sticky;
+}
+
+.navbar-brand {
+  letter-spacing: 0.4rem;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+small {
+  font-size: 0.9rem;
+  margin-left: -14px;
+}
+
+.nav-link1{
+  display: inline-block;
+  position: relative;
+  color: #000000;
+  margin-right: 3vw;
+  font-size: 30px;
+}
+
+.nav-link1:hover{
+  color:black;
+  cursor: pointer;
+}
+
+.nav-link {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Dancing Script", cursive;
+  display: inline-block;
+  position: relative;
+  color: #000000;
+  margin-right: 20px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+/*====================Main1=====================*/
+
+
+.main1{
+  background: linear-gradient(rgb(230, 246, 184), rgb(242, 242, 137), rgb(248, 248, 90));
+  height: auto;
+  width: auto;
+  padding-bottom: 10vh;
+  position: relative;
+}
+
+.head{
+  margin-top: 10vh;
+  float: left;
+}
+
+.Head-line{
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 900;
+
+}
+
+.Sub-Heading{
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.social-icon img{
+  mix-blend-mode: color-burn;
+  margin-bottom: 100px;
+  float: right;
+  display: inline;
+  margin-top: -20vh;
+}
+
+.content h3{
+  font-weight: bolder;
+  font-family: serif;
+}
+
+.content p{
+  font-size: 20px;
+  font-family: cursive;
+}
+
+/*======================================Footer============================================*/
+
+
+.footer{
+  background: linear-gradient(rgb(248, 248, 90),rgb(161, 161, 32),rgb(68, 68, 6));
+  font-family: 'Alexandria', sans-serif;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.footer h3{
+  color: rgb(0, 0, 0);
+  padding-top: 2vh;
+}
+
+.footer a:hover{
+  color: rgb(98, 98, 98);
+  padding-left: 5px;
+ 
+}
+
+.foot-cat{
+  padding-top: 0.80vh;
+}
+
+.join{
+  height: 50px;
+  width: 70%;
+  color: rgb(0, 0, 0);
+  background: transparent;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.btnj{
+  height: 50px;
+  width: 30%;
+  border: none;
+  outline: none;
+  background: rgb(101, 101, 101);
+  color:black;
+  font-size: bolder;
+  border-radius: 10px;
+  margin-left: 1vw;
+}
+
+.btnj:hover{
+  color: rgb(13, 31, 71);
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.50s ease-in-out;
+}
+
+.circle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.circle:hover{
+  background: rgb(129, 129, 129);
+  color: rgb(255, 255, 255);
+  transition: all 0.80s ease-in-out;
+}
+
+.circle i{
+  color: rgb(0, 0, 0);
+}
